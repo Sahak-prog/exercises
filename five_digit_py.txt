@@ -1,0 +1,7 @@
+num = int(input("Enter a five-digit number: "))
+digits = []
+for i in range(5):
+    digits.append(num % 10)
+    num //= 10
+digits.reverse()
+print(digits)
